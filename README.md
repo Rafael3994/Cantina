@@ -4,17 +4,17 @@ _Por falta de tiempo no llegue a implementar todo lo que queria hacer_<br>
 
 ## Tabla de contenidos:
 ---
-- [Wiki](#Wiki)
-- [Despliegue](#Despliegue)
-- [Muestra Visual](#Muestra-Visual)
-- [Instalación](#Instalación)
-- [Construido con](#Construido-con)
-- [Autor](#Autor)
+- [Wiki](#wiki)
+- [Despliegue](#despliegue)
+- [Muestra Visual](#muestra-Visual)
+- [Instalación](#instalación)
+- [Construido con](#construido-con)
+- [Autor](#autor)
 
 
 ### Wiki 📖
 ---
-```
+
 Nada más entrar en la pagina puedes ver una pequeña bienvenida, si le damos al boton menus iremos a esa pagina donde veremos las bebidas y comidas disponibles. Podemos seleccionar cualquier producto y cantidad y veremos el precio total de lo seleccionado, compramos lo que queremos y vamos a la siguente pagina. Aqui vemos un listado con los productos, las unidades y el precio, en esta pagina comprobaremos que los campos introducidos en el formulario son correctos (el telefono que tengo 9 digitos y el correo que tenga el dominio inspedralbes.cat), cuando los campos se han validado se activara el boton de siguiente.
 
 Algunas de las cosas que me hubiese gustado implementar son:
@@ -26,7 +26,8 @@ Algunas de las cosas que me hubiese gustado implementar son:
 * Al darle al boton ADMIN puedes iniciar sesion con un usario y password concretos para que te lleve a la pagina del administrador de la cantina, donde este podra gestionar los alimentos y bebidas.
 
 * Se comprobaria que un usuario ya ha hecho su pedido para decirle que solo puede realizar uno por dia.
-```
+
+<br>
 
 ### Despliegue 📦
 [Ver proyecto](https://cantina-rafael3994.herokuapp.com)  
@@ -43,9 +44,8 @@ Algunas de las cosas que me hubiese gustado implementar son:
 ## Instalación 🔧
 ---
 
-```
 Si quieres descargar este proyecto necesitaras un entorno de desarrollo para utilizar PHP, yo en mi caso utilice Xampp.
-```
+
 ## Construido con 🛠️
 ---
 ### Tecnologias
@@ -62,4 +62,4 @@ Si quieres descargar este proyecto necesitaras un entorno de desarrollo para uti
 
 ## Autor ✒️
 ---
-- **Rafael Garcia Perez** - [rafael3994](https://github.com/)
+- **Rafael Garcia Perez** - [rafael3994](https://github.com/rafael3994)
