@@ -1,0 +1,444 @@
+/*=======================================================
+=            Section Reset                              =
+=======================================================*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+button {
+    border: none;
+    font-family : inherit;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+	outline: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}body{line-height:1;color:black;background:white;}:focus{outline:0;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}abbr,acronym{border:0;} */
+
+/*=====  End of Section Reset  ======*/
+
+
+
+/*=======================================================
+=            Structure Desktop Page                     =
+=======================================================*/
+:root {
+    /* 01_FonsPagina */
+    --main-bg-color: #F8F8FA;
+    /* 02_MarcatSuau */
+    --main-bg-box-color: #FFFFFF;
+    /* 03_Text */
+    --main-txt-color: #000F14;
+    /* 04_ColorBase */
+    --main-color: #009FD6;
+    /* 04_ColorBase_Transparent 75% */
+    --main-color-transparent: #009FD6BF;
+    /* 04_ColorBase_Brighter_Transparent 10% */
+    --main-color-brighter: #05C1FF1A;
+    /* 04_ColorBase_Darker */
+    --main-color-darker: #005A78;
+    /* 05_ColorGraphics */
+    --main-graphic-color: #BDBDBD;
+
+    /* FontSize_H1 */
+    --h1-size: 24px;
+    /* FontSize_H2 */
+    --h2-size: 18px;
+    /* FontSize_H3 */
+    --h3-size: 24px;
+    /* FontSize_H4 */
+    --h4-size: 14px;
+
+    /* FontWeight_Thin */
+    --w1-font: 100;
+    /* FontWeight_Light */
+    --w2-font: 300;
+    /* FontWeight_Regular */
+    --w3-font: 400;
+    /* FontWeight_Medium */
+    --w4-font: 500;
+    /* FontWeight_bold */
+    --w5-font: 700;
+    /* FontWeight_black */
+    --w6-font: 900;
+
+    /* MarginVerticalRow */
+    --margin-vert: 80px;
+    /* MarginLateralCentralColumn */
+    --margin-hort: 32px;
+}
+
+html {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    font-family: 'Roboto', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 14px;
+    font-weight: var(--w3-font);
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+h2 {
+    font-size: var(--h2-size);
+}
+h3 {
+    font-size: var(--h3-size);
+}
+h4 {
+    font-size: var(--h4-size);
+}
+
+.row-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Ligher background on mouse-over */
+button:hover {
+    background-color: var(--main-color-transparent);
+}
+
+/* Brighter background on mouse-over */
+.box-plat:hover {
+    background-color: var(--main-color-brighter);
+}
+
+/* Darker color on mouse-over */
+.btn:hover #back-to-index,
+.btn:hover #back-to-menu,
+.btn:hover #back-to-form {
+    color: var(--main-color-darker);
+}
+
+/*=====  End of Structure Desktop Page  ======*/
+
+
+
+/*=======================================================
+=            Structure Header                           =
+=======================================================*/
+.header-row {
+    background-color: var(--main-bg-box-color);
+    height: 96px;
+    display: flex;
+    padding: 16px 16px;
+}
+
+.header-row h2 {
+    font-weight: var(--w2-font);
+    color: var(--main-graphic-color);
+}
+
+/* =Column Left
+------------------------------------------------- */
+.logo-col {
+    flex: 1;
+}
+
+.logo-col img {
+    height: 100%;
+}
+
+/* =Column Center
+------------------------------------------------- */
+.title-col {
+    flex: 2;
+    text-align: center;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* =Column Right
+------------------------------------------------- */
+.info-col {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.info-col a {
+    text-decoration: none;
+    margin-left: 8px;
+}
+/*=====  End of Structure Header  ======*/
+
+
+
+/*=======================================================
+=            Structure Content                          =
+=======================================================*/
+
+/* LEVEL 1 */
+.main-row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+/* LEVEL 2 */
+.content-col {
+    background-color: transparent;
+    min-width: 960px;
+    max-width: 1120px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-hort);
+    margin-bottom: var(--margin-hort);
+}
+
+/* LEVEL 3 */
+.content-head {
+    display: flex;
+    align-content: stretch;
+}
+
+/* LEVEL 3 */
+.content-main {
+    display: flex;
+    margin-top: var(--margin-hort);
+    margin-bottom: var(--margin-hort);
+    margin-left: var(--margin-vert);
+    margin-right: var(--margin-vert);
+}
+
+
+/* LEVEL 3 */
+.content-flux {
+    display: flex;
+    align-items: flex-end;
+    padding: 0px var(--margin-vert) var(--margin-hort) var(--margin-vert);
+}
+
+/* LEVEL 4 */
+/* =ROW CONTENT HEAD
+------------------------------------------------------ */
+/* =All Rows
+---------------------------------- */
+.content-head > h2 {
+    flex: 1;
+    text-align: center;
+    padding: 22px 0px;
+    border-bottom: 1px solid var(--main-graphic-color);
+}
+
+.content-head h2 {
+    font-weight: var(--w2-font);
+    color: var(--main-graphic-color);
+}
+
+/* .content-head > h2:nth-child(2){
+    color: var(--main-color);
+    font-weight: var(--w4-font);
+    border-bottom: 2px solid var(--main-color);
+} */
+
+/* LEVEL 4 */
+/* =ROW CONTENT MAIN
+------------------------------------------------------ */
+/* =COLUMN LEFT
+------------------------------------------------------ */
+.content-left-side {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+/* LEVEL 5 */
+.title-left {
+    padding-bottom: var(--margin-hort);
+}
+.title-left h3 {
+    font-weight: var(--w4-font);
+}
+.col-menu {
+    display: flex;
+    flex: 1;
+}
+
+/* LEVEL 4 */
+/* =COLUMN RIGHT
+------------------------------------------------------ */
+.content-right-side {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-left: var(--margin-vert);
+}
+
+/* LEVEL 5 */
+.title-right {
+    padding-bottom: var(--margin-hort);
+}
+.title-right h3 {
+    font-weight: var(--w4-font);
+}
+.col-price {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*=====  End of Structure Content  ======*/
+
+
+
+/*=======================================================
+=            Strucure Footer                            =
+=======================================================*/
+.footer-row {
+    border-top: 1px solid var(--main-graphic-color);
+    height: 64px;
+    display: flex;
+    padding: 16px 32px;
+}
+
+.footer-col-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--main-graphic-color);
+}
+
+.footer-col-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: var(--main-graphic-color);
+    margin-left: 16px;
+}
+/*=====  End of Strucure Footer  ======*/
+
+
+/*=============================================
+=            Margin and Padding               =
+=============================================*/
+/*=====  End of Margin and Padding  ======*/
+
+
+/*=============================================
+=            Flux Buttons Index               =
+=============================================*/
+.send-admin-butt {
+    background-color: var(--main-color);
+    color: var(--main-bg-box-color);
+    margin-right: var(--margin-vert);
+    flex: 1;
+    height: 48px;
+    border-radius: 4px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: var(--w2-font);
+}
+.send-menu-butt {
+    background-color: var(--main-color);
+    color: var(--main-bg-box-color);
+    margin-left: var(--margin-vert);
+    flex: 1;
+    height: 48px;
+    border-radius: 4px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: var(--w2-font);
+}
+/*=====  End of Flux Buttons Index  ======*/
+/*=============================================
+=            Flux Buttons Formulari           =
+=============================================*/
+.back-menu-butt {
+    height: 48px;
+    display: flex;
+    flex: 4;
+    text-align: start;
+}
+#back-to-menu {
+    background-color: transparent;
+    color: var(--main-color);
+    align-items: center;
+}
+.send-confirmation-butt {
+    background-color: var(--main-color);
+    color: var(--main-bg-box-color);
+    margin-left: var(--margin-vert);
+    flex: 3;
+    height: 48px;
+    border-radius: 4px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: var(--w2-font);
+}
+/*=====  End of Flux Buttons Formulari  ======*/
+/*=============================================
+=            Flux Buttons Confirmacio         =
+=============================================*/
+.back-index-butt,
+.back-form-butt {
+    height: 48px;
+    display: flex;
+    flex: 4;
+    text-align: start;
+}
+.send-end-butt {
+    background-color: var(--main-color);
+    color: var(--main-bg-box-color);
+    margin-left: var(--margin-vert);
+    flex: 3;
+    height: 48px;
+    border-radius: 4px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: var(--w2-font);
+}
+
+#back-to-form {
+    background-color: transparent;
+    color: var(--main-color);
+    align-items: center;
+}
+/*=====  End of Flux Buttons Confirmacio  ======*/

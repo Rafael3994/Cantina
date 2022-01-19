@@ -1,0 +1,101 @@
+/*=======================================================
+=            Structure Content                          =
+=======================================================*/
+
+/* LEVEL 4 */
+/* =ROW CONTENT MAIN
+------------------------------------------------------ */
+/* =COLUMN LEFT
+------------------------------------------------------ */
+
+/* LEVEL 6 */
+.box-plat {
+    border: 1px solid var(--main-graphic-color);
+    max-width: 96px;
+    background-color: transparent;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 8px;
+    margin: 8px 4px 0px 4px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    font-size: 12px;
+    font-weight: var(--w2-font);
+    min-height: 96px;
+    cursor: pointer;
+}
+
+/* LEVEL 7 */
+.box-plat > p:nth-child(2) {
+    font-size: 13px;
+    font-weight: var(--w3-font);
+}
+.box-plat > p:nth-child(1) {
+    z-index: -1;
+}
+
+
+/* LEVEL 4 */
+/* =COLUMN RIGHT
+------------------------------------------------------ */
+
+/* LEVEL 6 */
+.col-price h4 {
+    color: var(--main-color);
+    font-weight: var(--w2-font);
+    padding-bottom: 4px;
+}
+.col-price {
+    flex: 1;
+    border-bottom: 1px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* LEVEL 7 */
+.row-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#primer-plat-name,
+#segon-plat-name,
+#postre-name {
+    max-width: 192px;
+}
+
+/* LEVEL 4 */
+/* =ROW CONTENT FLUX
+------------------------------------------------------ */
+.back-index-butt {
+    height: 48px;
+    display: flex;
+    flex: 4;
+    text-align: start;
+}
+#back-to-index {
+    background-color: transparent; /* var(--main-bg-box-color); */ /* soluciona el problema de botons de box-plat al clickar sobre de lletra */
+    color: var(--main-color);
+    align-items: center;
+}
+.send-order-butt {
+    background-color: var(--main-color);
+    color: var(--main-bg-box-color);
+    margin-left: var(--margin-vert);
+    flex: 3;
+    height: 48px;
+    border-radius: 4px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: var(--w2-font);
+}
+/*=====  End of Structure Content  ======*/
