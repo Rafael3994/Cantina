@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName Documents
-AuthBasicProvider file
-AuthUserFile "/home/a18jorgornei/public_html/iteracio5/php/admin/.htpasswd"
-Require valid-user  
