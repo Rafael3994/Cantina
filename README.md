@@ -2,17 +2,9 @@
 _Este proyecto trata de una apliacion web para gestionar los pedidos de una cantina._<br>
 _Por falta de tiempo no llegue a implementar todo lo que queria hacer_<br>
 
-## Tabla de contenidos:
----
-- [Wiki](#wiki)
-- [Despliegue](#despliegue)
-- [Muestra Visual](#muestra-Visual)
-- [Instalación](#instalación)
-- [Construido con](#construido-con)
-- [Autor](#autor)
+<br>
 
-
-### Wiki 📖
+## Wiki 📖
 ---
 
 Nada más entrar en la pagina puedes ver una pequeña bienvenida, si le damos al boton menus iremos a esa pagina donde veremos las bebidas y comidas disponibles. Podemos seleccionar cualquier producto y cantidad y veremos el precio total de lo seleccionado, compramos lo que queremos y vamos a la siguente pagina. Aqui vemos un listado con los productos, las unidades y el precio, en esta pagina comprobaremos que los campos introducidos en el formulario son correctos (el telefono que tengo 9 digitos y el correo que tenga el dominio inspedralbes.cat), cuando los campos se han validado se activara el boton de siguiente.
@@ -29,11 +21,12 @@ Algunas de las cosas que me hubiese gustado implementar son:
 
 <br>
 
-### Despliegue 📦
+## Despliegue 📦
 [Ver proyecto](https://cantina-rafael3994.herokuapp.com)  
 <br>
 
-### Muestra Visual ⚙️
+##
+ Muestra Visual ⚙️
 ---
 <br>
 
@@ -41,10 +34,14 @@ Algunas de las cosas que me hubiese gustado implementar son:
 ![menu](/img/readme/menu.png)
 ![formulari](/img/readme/formulari.png)
 
+<br>
+
 ## Instalación 🔧
 ---
 
 Si quieres descargar este proyecto necesitaras un entorno de desarrollo para utilizar PHP, yo en mi caso utilice Xampp.
+
+<br>
 
 ## Construido con 🛠️
 ---
@@ -59,6 +56,8 @@ Si quieres descargar este proyecto necesitaras un entorno de desarrollo para uti
 * [XAMPP](https://www.apachefriends.org/es/index.html) - Enterono de desarrollo.
 * [FONT AWESOME](https://fontawesome.com/) - Para obtener los iconos.
 * [VISUAL STUDIO CODE](https://code.visualstudio.com/) - IDE.
+
+<br>
 
 ## Autor ✒️
 ---
