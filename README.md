@@ -29,7 +29,7 @@ Algunas de las cosas que me hubiese gustado implementar son:
 ```
 
 ### Despliegue 📦
-[Ver proyecto](https://developer.mozilla.org/es/docs/Web/HTML)  
+[Ver proyecto](https://cantina-rafael3994.herokuapp.com)  
 <br>
 
 ### Muestra Visual ⚙️
